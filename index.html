@@ -4,31 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js" defer></script>
+    <title>QR Code Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="/js/scripts.js" defer></script>
 </head>
 
 <body>
-    <div class="bg-shine"></div>
-
-    <h2>Gerador de QR Code</h2>
-
     <div class="container">
-        <form id="gerar-qrcode">
-            <label for="url-input">Insira a URL ou texto:</label>
-            <input type="text" id="url-input" name="url" placeholder="https://exemplo.com" required>
-            <input type="submit" value="Gerar QR Code">
-        </form>
-
-        <div id="qrcode-container">
-            <!-- QR Code será gerado aqui -->
+        <header id="qr-header">
+            <h1>QR Code Generator</h1>
+            <p>Enter a URL or text to generate a QR Code</p>
+        </header>
+        <div id="qr-form">
+            <input type="text" placeholder="Enter URL or Text">
+            <button>Generate QR</button>
+            <div id="qr-code">
+                <img src="img/qrcode.svg" alt="Generated QR Code">
+            </div>
         </div>
     </div>
-
     <footer>
-        © 2023 Gerador de QR Code | Estilo Apple Glassmorphism
+        Developed by Lucca Ozorio<br>
+        <a href="https://www.linkedin.com/in/luccaozorio/" target="_blank">Check out my professional profile <i
+                class="fab fa-linkedin"></i></a>
     </footer>
 </body>
 
