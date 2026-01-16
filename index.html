@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="bg-shine"></div>
+
+    <h2>Gerador de QR Code</h2>
+
+    <div class="container">
+        <form id="gerar-qrcode">
+            <label for="url-input">Insira a URL ou texto:</label>
+            <input type="text" id="url-input" name="url" placeholder="https://exemplo.com" required>
+            <input type="submit" value="Gerar QR Code">
+        </form>
+
+        <div id="qrcode-container">
+            <!-- QR Code será gerado aqui -->
+        </div>
+    </div>
+
+    <footer>
+        © 2023 Gerador de QR Code | Estilo Apple Glassmorphism
+    </footer>
+</body>
+
+</html>
